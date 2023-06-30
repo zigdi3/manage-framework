@@ -1,0 +1,11 @@
+<div class="flex flex-row flex-wrap gap-3">
+  <div class="card flex justify-content-center">
+    <p>Dropdown Prime</p>
+    <p-dropdown [options]="cities" [(ngModel)]="selectedCity" optionLabel="name"></p-dropdown>
+  </div>
+  <div class="card flex justify-content-center">
+    <p>SelectButton Prime</p>
+    <p-selectButton [options]="stateOptions" [(ngModel)]="value" optionLabel="label"
+      optionValue="value"></p-selectButton>
+  </div>
+</div>
