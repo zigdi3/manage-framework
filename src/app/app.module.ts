@@ -12,10 +12,12 @@ import { DropdownModule } from 'primeng/dropdown';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { MopeButtonComponent } from '../shared/mope-button/mope-button.component';
 import { ButtonModule } from 'primeng/button';
+import { PanelModule } from 'primeng/panel';
 import { MopeLoginComponent } from './pages/mope-login/mope-login.component';
+import { MopePanelComponent } from 'src/shared/mope-panel/mope-panel.component';
 
 @NgModule({
-  declarations: [AppComponent, PrimeFormsComponent, MopeButtonComponent, MopeLoginComponent],
+  declarations: [AppComponent, PrimeFormsComponent, MopeButtonComponent, MopePanelComponent, MopeLoginComponent],
   imports: [
     BrowserModule,
     FormsModule,
@@ -27,7 +29,9 @@ import { MopeLoginComponent } from './pages/mope-login/mope-login.component';
     //PrimeFormsComponent
     DropdownModule,
     SelectButtonModule,
-    ButtonModule
+    ButtonModule,
+    PanelModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
