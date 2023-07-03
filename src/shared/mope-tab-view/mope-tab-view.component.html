@@ -1,0 +1,12 @@
+<p-tabView #tabView [styleClass]="styleClass">
+  <p-tabPanel *ngFor="let tab of tabs; let i = index;let first = first;" [selected]="first"
+   header="">
+  <ng-template pTemplate="header">
+    <i [class]="tab.icon"></i>{{tab.header}}
+  </ng-template>
+   <div>
+      <p>{{tab.content}}</p>
+    </div>
+  </p-tabPanel>
+
+</p-tabView>
