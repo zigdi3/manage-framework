@@ -1,0 +1,8 @@
+<div class="card flex justify-content-left">
+  <p-sidebar #sidebar1 [(visible)]="sidebarVisible" [styleClass]="styleClass" [position] ="selectedPosition.position" >
+    <ng-template pTemplate="header">Header Content</ng-template>
+    <ng-template pTemplate="content">Body Content</ng-template>
+    <ng-template pTemplate="footer">Footer Content</ng-template>
+  </p-sidebar>
+  <p-button (click)="sidebarVisible = true" [icon]="selectedPosition.icon"></p-button>
+</div>
